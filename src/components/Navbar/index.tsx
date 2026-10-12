@@ -199,25 +199,23 @@ const Navbar: React.FC = () => {
             </Dropdown>
           </div>
 
-          {/* CTA buttons */}
-          <div className="flex items-center gap-2 md:gap-4">
-            {/* <Link
-              to="/login"
-              className="hidden md:block font-medium font-outfit transition-colors"
-              style={{ color: '#1F2B5D', textDecoration: 'none' }}
-            >
-              Log In
-            </Link> */}
+          {/* Dual CTA buttons per Section 2 & 3 */}
+          <div className="flex items-center gap-2 md:gap-3">
             <Link
               to="/contact"
-              className="font-bold px-4 py-2 md:px-6 md:py-2.5 text-[13px] md:text-base rounded-full transition-all duration-300 shadow-sm font-outfit whitespace-nowrap"
+              className="hidden lg:inline-block font-semibold px-4 py-2 text-sm rounded-full transition-all duration-300 border border-navy/20 text-navy hover:border-navy font-outfit whitespace-nowrap"
+              style={{ textDecoration: 'none' }}
+            >
+              Book a demo
+            </Link>
+            <Link
+              to="/start"
+              className="font-bold px-4 py-2 md:px-5 md:py-2 text-[13px] md:text-sm rounded-full transition-all duration-300 shadow-sm font-outfit whitespace-nowrap bg-navy hover:bg-navy/90 text-white"
               style={{
-                backgroundColor: '#1F2B5D',
-                color: '#fff',
                 textDecoration: 'none',
               }}
             >
-              Get Started
+              Start free
             </Link>
             {/* Mobile menu trigger */}
             <button
@@ -348,18 +346,30 @@ const Navbar: React.FC = () => {
           >
             Log In
           </a> */}
-          <Link
-            to="/contact"
-            className="text-center font-semibold py-3 rounded-full font-outfit transition-colors"
-            style={{
-              backgroundColor: '#1F2B5D',
-              color: '#fff',
-              textDecoration: 'none',
-              display: 'block',
-            }}
-          >
-            Get Started
-          </Link>
+          <div className="flex flex-col gap-2 pt-2">
+            <Link
+              to="/start"
+              onClick={() => setMobileOpen(false)}
+              className="text-center font-bold py-3 rounded-full font-outfit transition-colors bg-navy text-white"
+              style={{
+                textDecoration: 'none',
+                display: 'block',
+              }}
+            >
+              Start free with Duka
+            </Link>
+            <Link
+              to="/contact"
+              onClick={() => setMobileOpen(false)}
+              className="text-center font-semibold py-3 rounded-full font-outfit transition-colors border border-navy/20 text-navy hover:border-navy"
+              style={{
+                textDecoration: 'none',
+                display: 'block',
+              }}
+            >
+              Book a demo
+            </Link>
+          </div>
         </div>
       </Drawer>
     </>

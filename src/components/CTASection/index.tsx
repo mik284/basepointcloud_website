@@ -35,26 +35,26 @@ const CTASection: React.FC = () => {
 
         <div className="relative z-10 max-w-3xl mx-auto">
           <h2 className="text-4xl lg:text-6xl font-bold text-white mb-6 font-outfit">
-            Ready to start{' '}
-            <span style={{ color: '#8AFEA7' }}>achieving more?</span>
+            Run your business{' '}
+            <span style={{ color: '#8AFEA7' }}>on one system.</span>
           </h2>
           <p
             className="text-lg mb-10 font-outfit"
             style={{ color: 'rgba(255,255,255,0.7)' }}
           >
-            Join thousands of African businesses using Basepoint to scale their
-            operations, simplify management, and boost sales.
+            Connect the activity of your business into one clear picture. Start
+            free on your own or let our enterprise team design your deployment.
           </p>
 
-          {/* CTA buttons */}
+          {/* Dual CTA buttons per Section 2 */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full max-w-md mx-auto">
             <Button
               type="primary"
               size="large"
-              onClick={() => history.push('/contact')}
+              onClick={() => history.push('/start')}
               className="w-full sm:w-auto h-auto px-8 py-4 rounded-full font-bold font-outfit bg-mint border-mint text-navy hover:bg-white hover:border-white transition-all shadow-xl shadow-mint/20"
             >
-              Create Free Account
+              Start free with Duka
             </Button>
             <Button
               size="large"
@@ -62,7 +62,7 @@ const CTASection: React.FC = () => {
               onClick={() => history.push('/contact')}
               className="w-full sm:w-auto h-auto px-8 py-4 rounded-full font-bold font-outfit text-white border-white/30 hover:border-white hover:bg-white/10 transition-all"
             >
-              Talk to Sales
+              Book a demo
             </Button>
           </div>
 
@@ -70,7 +70,7 @@ const CTASection: React.FC = () => {
             className="mt-6 text-sm font-outfit"
             style={{ color: 'rgba(255,255,255,0.5)' }}
           >
-            No credit card required • 14-day free trial on premium features
+            No credit card required • Instant workspace setup
           </p>
         </div>
       </div>
