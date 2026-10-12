@@ -17,7 +17,7 @@ const DEFAULT_TITLE =
 const DEFAULT_DESCRIPTION =
   'Modular operating system for African trade. Manage sales, inventory, accounting, mobile-money liquidity, and payments across your business ecosystem.';
 const DEFAULT_KEYWORDS =
-  'BasepointCloud, Base Duka, Base Pesa, Base Smart Reja, Base Bandu, Base Mteja, Base Dala, Mobile Money POS, Inventory Financing Kenya, POS System Kenya';
+  'BasepointCloud, Base Duka, Base Pesa, Biashara AI, Base Bandu, Base Mteja, Base Dala, Mobile Money POS, Inventory Financing Kenya, POS System Kenya';
 const DEFAULT_OG_IMAGE = `${DEFAULT_DOMAIN}/logo.png`;
 
 const SEO: React.FC<SEOProps> = ({

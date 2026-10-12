@@ -9,12 +9,28 @@ export const routes = [
         component: './Landing',
       },
       {
+        path: '/start',
+        component: './Start',
+      },
+      {
         path: '/pricing',
-        redirect: '/contact',
+        component: './Pricing',
       },
       {
         path: '/contact',
         component: './Contact',
+      },
+      {
+        path: '/collabs',
+        component: './Collabs',
+      },
+      {
+        path: '/refer',
+        component: './Refer',
+      },
+      {
+        path: '/resources',
+        component: './Resources',
       },
       {
         path: '/base-duka',
@@ -33,8 +49,12 @@ export const routes = [
         component: './Products/Mteja',
       },
       {
+        path: '/solutions/biashara-ai',
+        component: './Solutions/BiasharaAI',
+      },
+      {
         path: '/base-smart-reja',
-        component: './Products/SmartReja',
+        redirect: '/solutions/biashara-ai',
       },
       {
         path: '/base-dala',
