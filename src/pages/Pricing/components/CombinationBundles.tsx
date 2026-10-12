@@ -1,7 +1,7 @@
-import React from 'react';
 import { BUNDLES } from '@/constants/pricingData';
-import { PlusCircleOutlined, ArrowRightOutlined } from '@ant-design/icons';
+import { ArrowRightOutlined, PlusCircleOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
+import React from 'react';
 
 const CombinationBundles: React.FC = () => {
   return (
@@ -13,10 +13,12 @@ const CombinationBundles: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-navy font-outfit mb-4">
-            Powerful Alone. <span className="text-mint-dark">Better Together.</span>
+            Powerful Alone.{' '}
+            <span className="text-mint-dark">Better Together.</span>
           </h2>
           <p className="max-w-xl mx-auto text-navy/60 font-medium font-outfit">
-            Combine any two or more products to unlock seamless data integration and massive discounts.
+            Combine any two or more products to unlock seamless data integration
+            and massive discounts.
           </p>
         </div>
 
@@ -29,8 +31,12 @@ const CombinationBundles: React.FC = () => {
               <div className="w-12 h-12 rounded-2xl bg-navy/5 flex items-center justify-center mb-6 group-hover:bg-mint transition-colors">
                 <PlusCircleOutlined className="text-2xl text-navy" />
               </div>
-              <h3 className="text-xl font-bold text-navy font-outfit mb-2">{bundle.name}</h3>
-              <p className="text-sm text-navy/50 font-medium font-outfit mb-6">Best for: {bundle.bestFor}</p>
+              <h3 className="text-xl font-bold text-navy font-outfit mb-2">
+                {bundle.name}
+              </h3>
+              <p className="text-sm text-navy/50 font-medium font-outfit mb-6">
+                Best for: {bundle.bestFor}
+              </p>
 
               <div className="flex items-center gap-2 mb-8">
                 <span className="text-3xl font-black text-navy font-outfit">
@@ -44,10 +50,13 @@ const CombinationBundles: React.FC = () => {
                 Save {bundle.discount}
               </div>
 
-              <Button className="w-full group/btn flex items-center justify-center gap-2 font-bold text-navy font-outfit hover:text-electric transition-colors"
-                icon={<ArrowRightOutlined className="group-hover/btn:translate-x-1 transition-transform" />}
-                iconPosition='end'
-                size='large'
+              <Button
+                className="w-full group/btn flex items-center justify-center gap-2 font-bold text-navy font-outfit hover:text-electric transition-colors"
+                icon={
+                  <ArrowRightOutlined className="group-hover/btn:translate-x-1 transition-transform" />
+                }
+                iconPosition="end"
+                size="large"
               >
                 Build this bundle
               </Button>
@@ -61,22 +70,39 @@ const CombinationBundles: React.FC = () => {
           </div>
 
           <div className="relative z-10 text-center md:text-left">
-            <h3 className="text-2xl font-bold font-outfit mb-2">Bulk Volume Discounts</h3>
-            <p className="text-white/60 font-medium font-outfit">Deploying across 10+ locations? We offer custom enterprise pricing.</p>
+            <h3 className="text-2xl font-bold font-outfit mb-2">
+              Bulk Volume Discounts
+            </h3>
+            <p className="text-white/60 font-medium font-outfit">
+              Deploying across 10+ locations? We offer custom enterprise
+              pricing.
+            </p>
           </div>
 
           <div className="relative z-10 flex flex-wrap justify-center gap-4">
             <div className="px-6 py-3 rounded-2xl bg-white/10 border border-white/20 backdrop-blur-sm">
-              <span className="block text-2xl font-black font-outfit">10% OFF</span>
-              <span className="text-[10px] font-bold uppercase tracking-widest text-white/50">2 Products</span>
+              <span className="block text-2xl font-black font-outfit">
+                10% OFF
+              </span>
+              <span className="text-[10px] font-bold uppercase tracking-widest text-white/50">
+                2 Products
+              </span>
             </div>
             <div className="px-6 py-3 rounded-2xl bg-white/10 border border-white/20 backdrop-blur-sm">
-              <span className="block text-2xl font-black font-outfit">15% OFF</span>
-              <span className="text-[10px] font-bold uppercase tracking-widest text-white/50">3 Products</span>
+              <span className="block text-2xl font-black font-outfit">
+                15% OFF
+              </span>
+              <span className="text-[10px] font-bold uppercase tracking-widest text-white/50">
+                3 Products
+              </span>
             </div>
             <div className="px-6 py-3 rounded-2xl bg-white/10 border border-white/20 backdrop-blur-sm border-mint/30 shadow-lg shadow-mint/10">
-              <span className="block text-2xl font-black font-outfit text-mint">20% OFF</span>
-              <span className="text-[10px] font-bold uppercase tracking-widest text-mint/50">4 Products</span>
+              <span className="block text-2xl font-black font-outfit text-mint">
+                20% OFF
+              </span>
+              <span className="text-[10px] font-bold uppercase tracking-widest text-mint/50">
+                4 Products
+              </span>
             </div>
           </div>
         </div>

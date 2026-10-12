@@ -24,18 +24,22 @@ const PricingHero: React.FC = () => {
         </h1>
 
         <p className="max-w-2xl mx-auto text-lg md:text-xl text-navy/70 font-outfit leading-relaxed mb-10">
-          Whether you're just starting with a single shop or managing a national enterprise,
-          Base Suite has a plan tailored to your needs.
+          Whether you&apos;re just starting with a single shop or managing a
+          national enterprise, Base Suite has a plan tailored to your needs.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4">
           <div className="flex items-center gap-2 px-6 py-3 rounded-2xl bg-surface border border-surfaceAlt shadow-soft">
             <span className="flex h-2 w-2 rounded-full bg-mint" />
-            <span className="text-sm font-semibold text-navy font-outfit">3-Month Free Trial on Duka</span>
+            <span className="text-sm font-semibold text-navy font-outfit">
+              3-Month Free Trial on Duka
+            </span>
           </div>
           <div className="flex items-center gap-2 px-6 py-3 rounded-2xl bg-surface border border-surfaceAlt shadow-soft">
             <span className="flex h-2 w-2 rounded-full bg-orange" />
-            <span className="text-sm font-semibold text-navy font-outfit">Save 20% on Annual Billing</span>
+            <span className="text-sm font-semibold text-navy font-outfit">
+              Save 20% on Annual Billing
+            </span>
           </div>
         </div>
       </div>
