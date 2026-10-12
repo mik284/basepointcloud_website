@@ -84,11 +84,11 @@ const PRODUCTS: ProductData[] = [
     ctaColor: '#0891b2',
   },
   {
-    id: 'smart-reja',
-    name: 'Smart Reja',
+    id: 'biashara-ai',
+    name: 'Biashara AI (Coming Soon)',
     description:
-      'Deepening the Value Chain through Data. Enabling Real-time visibility, Predictive analytics, Automated decision-making. Accelerating growth and profitability.',
-    cta: 'Explore Smart Reja',
+      'The business augmentation engine for commercial decision-making. Continuous market sensing, hypothesis validation, and supply-chain coordination.',
+    cta: 'Join Waitlist',
     iconKey: 'Chart',
     accentColor: 'rgba(255,231,0,0.2)',
     iconBorderColor: 'rgba(255,231,0,0.4)',
@@ -123,7 +123,8 @@ const ProductCard: React.FC<{ product: ProductData }> = ({ product }) => {
       'base-pesa': '/base-pesa',
       'base-bandu': '/base-bandu',
       'base-mteja': '/base-mteja',
-      'smart-reja': '/base-smart-reja',
+      'biashara-ai': '/solutions/biashara-ai',
+      'smart-reja': '/solutions/biashara-ai',
       custom: '/base-custom',
     };
 

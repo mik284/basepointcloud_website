@@ -7,7 +7,6 @@ import {
   AppstoreOutlined,
   BarChartOutlined,
   CreditCardOutlined,
-  HomeOutlined,
   RocketOutlined,
   TeamOutlined,
   ToolOutlined,
@@ -47,20 +46,14 @@ export const PRODUCT_LINKS: ProductLink[] = [
     icon: React.createElement(TeamOutlined),
   },
   {
-    label: 'Base Smart Reja',
-    href: '/base-smart-reja',
-    desc: 'Deepening value chain through data analytics.',
+    label: 'Biashara AI',
+    href: '/solutions/biashara-ai',
+    desc: 'Continuous commercial intelligence & market sensing (Coming Soon).',
     icon: React.createElement(BarChartOutlined),
   },
   {
-    label: 'Base Dala',
-    href: '/base-dala',
-    desc: 'Property management solution for real estate.',
-    icon: React.createElement(HomeOutlined),
-  },
-  {
     label: 'Custom',
-    href: '/custom',
+    href: '/base-custom',
     desc: 'Tailor-made solutions to fit your workflows.',
     icon: React.createElement(ToolOutlined),
   },
@@ -74,8 +67,10 @@ export interface NavLink {
 
 export const NAV_LINKS: NavLink[] = [
   { label: 'Products', href: '#', isDropdown: true },
-  { label: 'Features', href: '/#features' },
-  { label: 'About', href: '/#usecases' },
+  { label: 'Platform', href: '/#features' },
+  { label: 'Learn', href: '/resources' },
+  { label: 'Pricing', href: '/pricing' },
+  { label: 'Collabs', href: '/collabs' },
   { label: 'Contact', href: '/contact' },
 ];
 
@@ -179,9 +174,9 @@ export const USE_CASES: UseCase[] = [
 
 // ─── Stats ───────────────────────────────────────────────────────────────────
 export const STATS = [
-  { value: '10k+', label: 'Active Businesses' },
-  { value: '5M+', label: 'Transactions Processed' },
-  { value: '99.9%', label: 'Uptime Guarantee' },
+  { value: '<12 min', label: 'River Road Field Pilot Onboarding' },
+  { value: '24 of 26', label: 'CBD Pilot Shops Successfully Activated' },
+  { value: '99.9%', label: 'Uptime SLA' },
 ];
 
 // ─── Testimonials ────────────────────────────────────────────────────────────
@@ -234,8 +229,8 @@ export const FOOTER_PRODUCTS = [
   { label: 'Base Bandu', href: '/base-bandu' },
   { label: 'Base Pesa', href: '/base-pesa' },
   { label: 'Base Mteja', href: '/base-mteja' },
-  { label: 'Base Dala', href: '/base-dala' },
-  { label: 'Custom Solutions', href: '/custom' },
+  { label: 'Biashara AI (Coming Soon)', href: '/solutions/biashara-ai' },
+  { label: 'Custom Solutions', href: '/base-custom' },
 ];
 
 export const FOOTER_COMPANY = [

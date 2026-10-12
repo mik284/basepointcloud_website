@@ -9,10 +9,10 @@ import React from 'react';
 import { USE_CASES } from '@/constants/landingData';
 
 const ICON_MAP: Record<string, React.ReactNode> = {
-  Shop:    <ShopOutlined   style={{ fontSize: 22 }} />,
-  Bank:    <BankOutlined   style={{ fontSize: 22 }} />,
-  Global:  <GlobalOutlined style={{ fontSize: 22 }} />,
-  Wallet:  <WalletOutlined style={{ fontSize: 22 }} />,
+  Shop: <ShopOutlined style={{ fontSize: 22 }} />,
+  Bank: <BankOutlined style={{ fontSize: 22 }} />,
+  Global: <GlobalOutlined style={{ fontSize: 22 }} />,
+  Wallet: <WalletOutlined style={{ fontSize: 22 }} />,
 };
 
 // Icon text color for each use case based on bg contrast
@@ -35,7 +35,10 @@ const UseCases: React.FC = () => {
           >
             Who is Basepoint for?
           </h2>
-          <p className="text-lg font-outfit" style={{ color: 'rgba(31,43,93,0.6)' }}>
+          <p
+            className="text-lg font-outfit"
+            style={{ color: 'rgba(31,43,93,0.6)' }}
+          >
             Whatever your size or industry, we have the tools to help you grow.
           </p>
         </div>
@@ -46,7 +49,10 @@ const UseCases: React.FC = () => {
             <div
               key={uc.id}
               className={`flex gap-6 p-6 rounded-3xl border transition-all group ${uc.hoverBorder} hover:shadow-lg`}
-              style={{ backgroundColor: 'rgba(248,249,250,0.5)', borderColor: '#F0F3F8' }}
+              style={{
+                backgroundColor: 'rgba(248,249,250,0.5)',
+                borderColor: '#F0F3F8',
+              }}
             >
               {/* Icon circle */}
               <div

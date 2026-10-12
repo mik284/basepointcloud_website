@@ -10,11 +10,10 @@ import { FEATURES } from '@/constants/landingData';
 
 const ICON_MAP: Record<string, React.ReactNode> = {
   Appstore: <AppstoreOutlined style={{ fontSize: 22 }} />,
-  Rise:     <RiseOutlined     style={{ fontSize: 22 }} />,
-  Bank:     <BankOutlined     style={{ fontSize: 22 }} />,
-  Safety:   <SafetyOutlined   style={{ fontSize: 22 }} />,
+  Rise: <RiseOutlined style={{ fontSize: 22 }} />,
+  Bank: <BankOutlined style={{ fontSize: 22 }} />,
+  Safety: <SafetyOutlined style={{ fontSize: 22 }} />,
 };
-
 
 const Features: React.FC = () => {
   return (
@@ -69,8 +68,8 @@ const Features: React.FC = () => {
             className="max-w-md pb-2 text-lg font-outfit"
             style={{ color: 'rgba(255,255,255,0.7)' }}
           >
-            Under the hood, Basepoint uses world-class infrastructure to ensure your business never
-            misses a beat, whether you have 1 store or 100.
+            Under the hood, Basepoint uses world-class infrastructure to ensure
+            your business never misses a beat, whether you have 1 store or 100.
           </p>
         </div>
 
@@ -103,7 +102,9 @@ const Features: React.FC = () => {
               >
                 {ICON_MAP[feature.iconKey]}
               </div>
-              <h4 className="text-xl font-bold mb-3 font-outfit">{feature.title}</h4>
+              <h4 className="text-xl font-bold mb-3 font-outfit">
+                {feature.title}
+              </h4>
               <p
                 className="text-sm leading-relaxed font-outfit"
                 style={{ color: 'rgba(255,255,255,0.6)' }}

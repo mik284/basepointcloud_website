@@ -3,9 +3,9 @@ import React from 'react';
 import SEO from '@/components/SEO';
 import Features from '@/pages/Landing/components/Features';
 import Hero from '@/pages/Landing/components/Hero';
-import IntegrationsMarquee from '@/pages/Landing/components/IntegrationsMarquee';
 import Products from '@/pages/Landing/components/Products';
 import SocialProof from '@/pages/Landing/components/SocialProof';
+import TwoWaysToGetStarted from '@/pages/Landing/components/TwoWaysToGetStarted';
 import UseCases from '@/pages/Landing/components/UseCases';
 
 import './index.css';
@@ -30,12 +30,11 @@ const LandingPage: React.FC = () => {
         }}
       />
 
-      {/* 2. Hero — headline, CTA, animated dashboard mockup */}
-      {/* 2. Hero — headline, CTA, animated dashboard mockup */}
+      {/* 1. Hero — headline, dual CTAs, animated dashboard mockup */}
       <Hero />
 
-      {/* 3. Payment integrations scrolling marquee */}
-      <IntegrationsMarquee />
+      {/* 2. Proof strip + Two ways to get started band (Section 8.1, Flag 1 & 5) */}
+      <TwoWaysToGetStarted />
 
       {/* 4. Product cards (BasePesa, Duka1, Bandu, Duka1, Loyalty) */}
       <Products />

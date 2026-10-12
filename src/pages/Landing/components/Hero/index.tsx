@@ -80,10 +80,10 @@ const Hero: React.FC = () => {
               style={{ backgroundColor: '#8AFEA7' }}
             />
             <span
-              className="text-sm font-semibold tracking-wide font-outfit"
+              className="text-xs font-bold uppercase tracking-wider font-outfit"
               style={{ color: '#1F2B5D' }}
             >
-              Achieve More™
+              THE OPERATING SYSTEM FOR MODERN BUSINESS
             </span>
           </div>
 
@@ -92,14 +92,14 @@ const Hero: React.FC = () => {
             className="text-5xl lg:text-6xl font-bold leading-tight tracking-tight mb-6 font-outfit"
             style={{ color: '#1F2B5D', lineHeight: 1.1 }}
           >
-            The Foundation of African Trade.{' '}
+            Unify your business.{' '}
             <span
               className="text-transparent bg-clip-text"
               style={{
                 backgroundImage: 'linear-gradient(to right, #0800F0, #80E4F1)',
               }}
             >
-              Built on Base.
+              Multiply your impact.
             </span>
           </h1>
 
@@ -108,40 +108,37 @@ const Hero: React.FC = () => {
             className="text-lg lg:text-xl mb-10 max-w-lg leading-relaxed font-outfit"
             style={{ color: 'rgba(31,43,93,0.7)' }}
           >
-            Manage sales, inventory, accounting, and payments from a single,
-            unified dashboard built specifically for African businesses to scale
-            effortlessly.
+            Base connects the activity of your business — sales, stock, money,
+            and customers — into one clear picture, so you always know what
+            matters before it matters.
           </p>
 
-          {/* CTA buttons */}
+          {/* Dual CTA buttons per Section 2.2 & 8.1 */}
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
             <Button
               type="primary"
               size="large"
-              onClick={() => {
-                const el = document.querySelector('#products');
-                el?.scrollIntoView({ behavior: 'smooth' });
-              }}
+              onClick={() => history.push('/start')}
               className="w-full sm:w-auto h-auto px-8 py-4 rounded-full font-bold font-outfit bg-navy border-navy hover:bg-navy/90 hover:border-navy/90 transition-all shadow-lg"
             >
-              Get Started for Free
+              Start free with Duka
             </Button>
             <Button
               size="large"
-              onClick={() => history.push('/pricing')}
+              onClick={() => history.push('/contact')}
               className="w-full sm:w-auto h-auto px-8 py-4 rounded-full font-bold font-outfit bg-white border-2 border-surfaceAlt text-navy hover:border-navy hover:text-navy transition-all"
             >
-              View Pricing
+              Book a demo
             </Button>
           </div>
 
-          {/* Social proof */}
+          {/* Pilot Proof Strip (Flag 1 & Flag 4 cleared evidence) */}
           <div className="mt-10 flex items-center gap-4">
             <div className="flex -space-x-3">
               {[
-                { initials: 'AM', bg: '#F7B344', color: '#fff' },
-                { initials: 'JO', bg: '#0800F0', color: '#fff' },
-                { initials: 'EW', bg: '#8AFEA7', color: '#1F2B5D' },
+                { initials: 'RR', bg: '#8AFEA7', color: '#1F2B5D' },
+                { initials: 'CBD', bg: '#0800F0', color: '#fff' },
+                { initials: 'BP', bg: '#F7B344', color: '#fff' },
               ].map(({ initials, bg, color }) => (
                 <div
                   key={initials}
@@ -156,12 +153,20 @@ const Hero: React.FC = () => {
                 </div>
               ))}
             </div>
-            <span
-              className="text-sm font-medium font-outfit"
-              style={{ color: 'rgba(31,43,93,0.6)' }}
-            >
-              Joined by 10,000+ businesses
-            </span>
+            <div>
+              <span
+                className="text-sm font-semibold font-outfit block"
+                style={{ color: '#1F2B5D' }}
+              >
+                24 of 26 River Road shops onboarded in &lt;12 mins
+              </span>
+              <span
+                className="text-xs font-outfit block"
+                style={{ color: 'rgba(31,43,93,0.5)' }}
+              >
+                Early field pilot, CBD — September 2026
+              </span>
+            </div>
           </div>
         </div>
 
@@ -365,6 +370,18 @@ const Hero: React.FC = () => {
                   </div>
                 </div>
               </div>
+            </div>
+
+            {/* Illustrative data caption (Flag 3 compliance) */}
+            <div
+              className="py-1.5 px-4 text-center text-xs font-medium font-outfit border-t"
+              style={{
+                backgroundColor: 'rgba(248,249,250,0.85)',
+                color: 'rgba(31,43,93,0.5)',
+                borderColor: '#F0F3F8',
+              }}
+            >
+              Illustrative data
             </div>
           </div>
 
